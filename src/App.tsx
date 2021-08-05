@@ -21,7 +21,7 @@ function App() {
 
       <div className="History">
         <h1>History</h1>
-        <div>Withdraw: 1000</div>
+        <div>Deposit: 1000</div>
         <div>Withdraw: 1000</div>
       </div>
     </div>
