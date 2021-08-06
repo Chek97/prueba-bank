@@ -1,5 +1,5 @@
-import { ActionType } from "../action-types/index"
-import { Action } from "../actions"
+import { ActionType } from "../action-types/index";
+import { Action } from "../actions";
 
 const initialState = 0;
 
@@ -11,6 +11,8 @@ const reducer = (state: number = initialState, action: Action): number => {
             return state - action.payload;
         case ActionType.BANKRUPT:
             return 0;
+        case ActionType.GETDEPOSIT:
+            return state + action.payload;
         default:
             return state
     }

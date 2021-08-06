@@ -14,4 +14,29 @@ interface BankruptAction {
     type: ActionType.BANKRUPT
 }
 
-export type Action = DepositAction | WithdrawAction | BankruptAction;
+interface GetDepositAction {
+    type: ActionType.GETDEPOSIT,
+    payload: number
+}
+
+interface GetHistoryAction {
+    type: ActionType.GETHISTORY,
+    payload: any
+}
+
+interface SetDepositAction {
+    type: ActionType.SETDEPOSIT,
+    payload: any
+}
+
+interface SetWithDrawAction {
+    type: ActionType.SETWITHDRAW,
+    payload: any
+}
+
+interface SetAmountAction {
+    type: ActionType.SETAMOUNT,
+    payload: any
+}
+
+export type Action = DepositAction | WithdrawAction | BankruptAction | GetDepositAction | GetHistoryAction | SetDepositAction | SetWithDrawAction | SetAmountAction;
